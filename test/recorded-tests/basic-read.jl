@@ -30,9 +30,9 @@
         patient_request = "/Patient/$(patient_id)"
         patients = [
             BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request), "recording-$(i)-2.bson")
-            # BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request; body = Dict()), "recording-$(i)-3.bson")
+            BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request; body = Dict()), "recording-$(i)-3.bson")
             BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request; query = Dict{String, String}()), "recording-$(i)-4.bson")
-            # BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request; body = Dict(), query = Dict{String, String}()), "recording-$(i)-5.bson")
+            BrokenRecord.playback(() -> FHIRClientXML.request_xml(client, "GET", patient_request; body = Dict(), query = Dict{String, String}()), "recording-$(i)-5.bson")
         ]
         for patient in patients
             patient_resource = patient["Patient"]
