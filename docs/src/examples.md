@@ -16,5 +16,6 @@ patients = bundle["Bundle"]["entry"];
 patient_id = patients[1]["resource"]["Patient"]["id"][:value]
 patient = FHIRClientXML.request_xml(client, "GET", "/Patient/$(patient_id)")
 patient["Patient"]["name"]
+patient["Patient"]["birthDate"][:value]
 patient["Patient"]["address"]
 ```
