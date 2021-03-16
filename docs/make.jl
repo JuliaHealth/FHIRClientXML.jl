@@ -5,7 +5,7 @@ DocMeta.setdocmeta!(FHIRClientXML, :DocTestSetup, :(using FHIRClientXML); recurs
 
 makedocs(;
     modules=[FHIRClientXML],
-    authors="Dilum Aluthge, contributors",
+    authors="Dilum Aluthge, Rhode Island Quality Institute, and contributors",
     repo="https://github.com/JuliaHealth/FHIRClientXML.jl/blob/{commit}{path}#{line}",
     sitename="FHIRClientXML.jl",
     format=Documenter.HTML(;
@@ -15,7 +15,11 @@ makedocs(;
     ),
     pages=[
         "Home" => "index.md",
+        "Installation" => "installation.md",
+        "Examples" => "examples.md",
+        "API" => "api.md",
     ],
+    strict=true,
 )
 
 deploydocs(;

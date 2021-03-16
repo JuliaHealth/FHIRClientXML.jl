@@ -2,11 +2,8 @@
 CurrentModule = FHIRClientXML
 ```
 
-# FHIRClientXML
+# FHIRClientXML.jl
 
-```@index
-```
-
-```@autodocs
-Modules = [FHIRClientXML]
-```
+You probably want
+[FHIRClient.jl](https://github.com/JuliaHealth/FHIRClient.jl)
+instead.
