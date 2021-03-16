@@ -114,7 +114,7 @@ end
     return nothing
 end
 
-@inline function _write_xml_request_body(body::AbstractDict)::Nothing
+@inline function _write_xml_request_body(body::AbstractDict)::String
     return XMLDict.dict_xml(body)
 end
 
