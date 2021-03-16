@@ -1,4 +1,4 @@
-# FHIRClientXML
+# FHIRClientXML.jl - you probably want [FHIRClient.jl](https://github.com/JuliaHealth/FHIRClient.jl) instead
 
 [![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://JuliaHealth.github.io/FHIRClientXML.jl/stable)
 [![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://JuliaHealth.github.io/FHIRClientXML.jl/dev)

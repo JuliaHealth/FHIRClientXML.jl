@@ -1,5 +1,13 @@
 module FHIRClientXML
 
-# Write your package code here.
+import Base64
+import HTTP
+import XMLDict
 
-end
+include("types.jl")
+
+include("credentials.jl")
+include("headers.jl")
+include("requests.jl")
+
+end # module
